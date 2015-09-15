@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.vizo.news.ui.VizoRoundedLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp">
+
+        <com.vizo.news.ui.VizoDynamicImageView
+            android:id="@+id/iv_glance_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+    </com.vizo.news.ui.VizoRoundedLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <com.vizo.news.ui.VizoTextView
+            android:id="@+id/tv_glance_date_time"
+            style="@style/White_TextView_Style"
+            android:background="@drawable/rounded_black"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textSize="12dp" />
+
+        <com.vizo.news.ui.VizoTextView
+            android:id="@+id/tv_glance_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/rounded_black"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="skip_text">跳跃</string>
+    <string name="welcome_text">欢迎光临</string>
+    <string name="vizo">Vizo</string>
+    <string name="intro_text">获得最新和最相关的新闻报道，而无需通过报纸和聚合摸索.</string>
+
+    <!-- String Resources for Category Names -->
+    <string name="cat_business">业务</string>
+    <string name="cat_politics">政治</string>
+    <string name="cat_sports">体育</string>
+    <string name="cat_art_culture">艺术 &amp; 文化</string>
+    <string name="cat_technology">技术</string>
+    <string name="cat_top_news">顶级新闻</string>
+    <string name="cat_us">美国</string>
+    <string name="cat_world">世界</string>
+    <string name="cat_celebrities">名人</string>
+    <string name="cat_vizou">Vizo U</string>
+    <string name="cat_science"></string>
+
+    <!-- String Resource for Onboarding -->
+    <string name="your_world_at_a_glance">你的世界一目了然。</string>
+    <string name="Next">下一个</string>
+    <string name="email_login">与电子邮件登录</string>
+    <string name="fb_login">新的邻人</string>
+    <string name="tw_login">与Twitter登录</string>
+    <string name="Login">登录</string>
+    <string name="Email_Login">邮箱登录</string>
+    <string name="Email_Address">电子邮件地址</string>
+    <string name="Password">密码</string>
+    <string name="Dont_have_account">还没有账号？</string>
+    <string name="Sign_Up"><u>报名</u></string>
+    <string name="Create_Account">创建账户</string>
+    <string name="First_Name">名字</string>
+    <string name="Last_Name">姓</string>
+
+    <!-- Global String Resource -->
+    <string name="app_name">Vizo</string>
+    <string name="done">做完</string>
+    <string name="back">向后</string>
+    <string name="next">下一个</string>
+
+    <!-- String Resource for Last Glance View -->
+    <string name="all_of_the">这是所有的</string>
+    <string name="read_previous">阅读上一页</string>
+    <string name="looks_like_all_read">看起来你已经阅读</string>
+    <string name="change_category">更改类别</string>
+    <string name="good_job">好工作 :)</string>
+    <string name="or">或</string>
+
+    <!-- String Resource for Glance Preview -->
+    <string name="continue_hold">继续持股 看一眼</string>
+    <string name="release_to_cancel">发布取消</string>
+
+    <!-- String Resource for Glance Sharing View -->
+    <string name="post_to_facebook">发布到Facebook</string>
+    <string name="post_to_twitter">张贴到Twitter</string>
+    <string name="post_to_instagram">发布到Instagram的</string>
+    <string name="share_with_linkedin">分享与LinkedIn</string>
+    <string name="text">文本</string>
+    <string name="email">电子邮件</string>
+
+    <!-- String Resource for Article Source View -->
+    <string name="view_article_source">查看文章来源</string>
+    <string name="save_image">保存图像</string>
+
+    <!-- String Resource for Logo Settings -->
+    <string name="no_account">没有帐号</string>
+    <string name="Settings">设置</string>
+    <string name="Glanced">瞥</string>
+    <string name="Editions">版本</string>
+
+    <!-- String Resource for General Settings -->
+    <string name="General">一般</string>
+    <string name="Show_Tips">显示提示</string>
+    <string name="Auto_Translate">自动翻译</string>
+    <string name="About">大约</string>
+    <string name="About_Vizo">大约 Vizo</string>
+    <string name="Help_Feedback">救命 &amp; 信息反馈</string>
+    <string name="Rate_Us">利率我们</string>
+    <string name="Logout">注销</string>
+
+    <!-- String Resources for Preference Settings -->
+    <string name="HOLD_DRAG">举行 &amp; 拖</string>
+    <string name="Organize_Glance">组织 一览</string>
+    <string name="categories">类别</string>
+
+    <!-- String Resource for Tutorials -->
+    <string name="vizo_description">
+        VIZIO在简短的, 基于图像的摘要提供了当今顶尖的全球趋势的头条新闻.</string>
+    <string name="swipe_to_continue">轻扫继续</string>
+    <string name="tri_daily_update">三，每日更新</string>
+    <string name="tri_daily_update_description">在这里Vizio公司，我们上传15故事，一天三次 - 早上，下午和晚上.</string>
+    <string name="Glances">眼色</string>
+    <string name="Glances_description">
+        一看就知是对趋势的新闻故事由一个500字简介的黑白图像与突出重点的新视角。</string>
+    <string name="VizoU">VizoU</string>
+    <string name="Tutorial_VizoU_Description">A revolutionary platform that allows anyone
+        to become a journalist and publish their own articles. Take your own image,
+        upload it and then share it with the world.</string>
+    <string name="Glance_Preferences">首一目了然</string>
+    <string name="Glance_Preferences_description">定制你的消息，你的世界。自定义您的新闻提要，以确保你看到你想要的消息。</string>
+
+    <!-- String Resource for About Page -->
+    <string name="vizo_copyright">(c) Vizo, inc. 2015</string>
+    <string name="vizo_version">Vizo 1.0</string>
+    <string name="vizo_about">VIZO提供在简短的基于图像的摘要提供当今顶级的趋势全球新闻头条，每日三次，我们给你一个直观迷人，易消化格式的最新和最伟大的新闻报道。</string>
+    <string name="Agree">Agree</string>
+    <string name="Decline">Decline</string>
+
+    <!-- String Resource for Home Screen Walkthrough -->
+    <string name="HOLD_VIZO">举行 VIZO</string>
+    <string name="to_view_your">查看您的</string>
+    <string name="Account">帐户</string>
+    <string name="and">和</string>
+    <string name="adjust_your">调整</string>
+
+    <string name="SWIPE_UP_OR_DOWN">SWIPE UP OR DOWN</string>
+    <string name="Change_Glance_Categories">Change Glance Categories</string>
+
+    <string name="TAP_THE_LIGHTNING_BOLT">TAP THE LIGHTNING BOLT</string>
+    <string name="to_load">to load</string>
+    <string name="New_Glances">New Glances</string>
+
+    <!-- String Resources for State Of The Day -->
+    <string name="State_Of_The_Day">当天的状态</string>
+    <string name="Help">救命</string>
+    <string name="STAFF_PICKS">工作人员精选</string>
+    <string name="TRENDING">趋势</string>
+
+    <!-- String Resource for Full Glance Walkthrough -->
+    <string name="SWIPE_DOWN">向下滑动</string>
+    <string name="to_view">查看</string>
+    <string name="Glance_Preview">一目了然预览</string>
+    <string name="SWIPE_LEFT_OR_RIGHT">向左或向右滑动</string>
+    <string name="to">到</string>
+    <string name="Change_Glances">变化的秋波</string>
+
+    <!-- String Resources for Editions Page -->
+    <string name="Choose_an_Edition">选择一个版本</string>
+
+    <!-- String Resources for Account Settings -->
+    <string name="Account_Settings">账户设置</string>
+    <string name="Change_Password">更改密码</string>
+    <string name="Old_Password">旧密码</string>
+    <string name="New_Password">新密码</string>
+    <string name="Confirm_Password">确认密码</string>
+    <string name="Accounts">帐户</string>
+    <string name="Manage_Accounts">管理帐户</string>
+    <string name="Disconnect">断开</string>
+    <string name="Add_Account">添加帐户</string>
+
+    <string name="Add_Photo">添加照片</string>
+
+    <!--String Resource for Vizo About-->
+    <string name="Terms_of_Service">服务条款</string>
+    <string name="Privacy_Policy">隐私政策</string>
+    <string name="Credits">学分</string>
+
+    <!--String Resource for Vizo Help & Feedback-->
+    <string name="FAQ">常问问题</string>
+    <string name="Support">支援</string>
+    <string name="Feedback">反馈</string>
+    <string name="Frequently_Asked_Questions">常问问题</string>
+
+    <!-- String Resources for Glanced Page -->
+    <string name="to_navigate_through">浏览</string>
+    <string name="Glanced_Stories">扫了一眼故事</string>
+    <string name="TAP_THE_STAR">挖掘明星</string>
+    <string name="to_only_view">只能查看</string>
+    <string name="Favorited_Glances">收藏秋波</string>
+    <string name="read_glance">读取一目了然</string>
+    <string name="Clear_All_History">清除全部历史记录</string>
+    <string name="no_glanced">没有瞥历史</string>
+
+    <!-- String Resources for VizoU Activity Page -->
+    <string name="Activity">活动</string>
+    <string name="Create_Glance">创建一览</string>
+    <string name="Tap_to_add_a_photo">轻点添加照片</string>
+    <string name="Tap_to_change_photo">点击更改照片</string>
+    <string name="Preview">预览</string>
+    <string name="Delete_glance_confirmation">你确定要删除您看一眼？</string>
+    <string name="Upload">上传</string>
+    <string name="Reshoot">重拍</string>
+    <string name="Capture">捕获</string>
+    <string name="Use">使用</string>
+    <string name="Choose_a_Category">选择类别</string>
+    <string name="Edit">编辑</string>
+    <string name="Publish">发布</string>
+    <string name="Connect_Your_Facebook_Account">连接您的Facebook帐户</string>
+    <string name="To_join_the_VizoU">加入VizoU社区和几眼后</string>
+    <string name="of">of</string>
+    <string name="Character_minimum">Character Minimum</string>
+    <string name="Characters_remaining">Characters remaining</string>
+    <string name="Write_something_novel">Write something novel</string>
+
+    <!-- String Resources for Date/Time stamp -->
+    <string name="morning">上午</string>
+    <string name="afternoon">下午</string>
+    <string name="evening">晚上</string>
+
+    <!-- String Resources for Sharing Content -->
+    <string name="Want_to_read_more">Want to read more?
+        Get the app today and experience Your World at a Glance. Next.™</string>
+    <string name="Get_the_app_today">Get the app today</string>
+
+    <!-- String Resource for Social Media authentication -->
+    <string name="facebook_app_id">1567103316908435</string>
+
+    <string name="privacy_policy_text"></string>
+    <string name="tos_text"></string>
+</resources>

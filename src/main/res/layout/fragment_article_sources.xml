@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0000000"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <com.vizo.news.ui.VizoTextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal"
+        android:text="@string/view_article_source"
+        android:textColor="@color/grey"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp">
+
+        <com.vizo.news.ui.VizoTextView
+            android:id="@+id/tv_done_button"
+            style="@style/White_TextView_Style"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:padding="16dp"
+            android:text="@string/done" />
+
+        <com.vizo.news.ui.VizoTextView
+            android:id="@+id/tv_save_image_button"
+            style="@style/White_TextView_Style"
+            android:layout_above="@+id/tv_done_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:drawableTop="@drawable/icon_camera"
+            android:text="@string/save_image"
+            android:textColor="@color/grey" />
+
+        <ViewAnimator
+            android:id="@+id/sources_list_animator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tv_save_image_button">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <ListView
+                android:id="@+id/lv_article_sources"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/tv_save_image_button"
+                android:divider="@drawable/divider"
+                android:dividerHeight="1dp"
+                android:scrollbars="none" />
+        </ViewAnimator>
+    </RelativeLayout>
+</LinearLayout>

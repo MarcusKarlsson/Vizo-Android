@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_screen_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40">
+
+            <com.vizo.news.ui.VizoVerticalCategoryPager
+                android:id="@+id/vp_glance_pager_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent" />
+
+            <RelativeLayout
+                android:id="@+id/rl_top_pager_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="60">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.vizo.news.ui.VizoVerticalCategoryPager
+                        android:id="@+id/vp_glance_pager_left"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_left_pager_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.vizo.news.ui.VizoVerticalCategoryPager
+                        android:id="@+id/vp_glance_pager_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_right_pager_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_refresh_icon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:paddingRight="48dp"
+                android:src="@drawable/icon_light"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="80">
+
+            <ImageView
+                android:id="@+id/iv_vizo_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/icon_logo" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_blur_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/rl_preview_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:background="@color/black_overlay"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.vizo.news.ui.VizoTextView
+            android:id="@+id/tv_preview_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical">
+
+            <com.vizo.news.ui.VizoTextView
+                android:id="@+id/tv_preview_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/continue_hold"
+                android:textColor="@color/vizo_yellow"
+                android:textSize="15sp" />
+
+            <com.vizo.news.ui.VizoTextView
+                android:id="@+id/tv_release_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/release_to_cancel"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_walkthrough_hold_vizo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:background="@color/black_overlay"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:weightSum="100">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="80">
+
+            <ImageView
+                android:id="@+id/iv_hold_vizo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_wt_hold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_hold_vizo"
+                android:layout_marginTop="12dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.vizo.news.ui.VizoTextView
+                    style="@style/White_TextView_Style"
+                    android:text="@string/HOLD_VIZO"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <com.vizo.news.ui.VizoTextView
+                        style="@style/White_TextView_Style"
+                        android:text="@string/to_view_your" />
+
+                    <com.vizo.news.ui.VizoTextView
+                        style="@style/Yellow_TextView_Style"
+                        android:layout_marginLeft="4dp"
+                        android:text="@string/Account"
+                        android:textStyle="bold" />
+
+                    <com.vizo.news.ui.VizoTextView
+                        style="@style/White_TextView_Style"
+                        android:layout_marginLeft="4dp"
+                        android:text="@string/and" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <com.vizo.news.ui.VizoTextView
+                        style="@style/White_TextView_Style"
+                        android:text="@string/adjust_your" />
+
+                    <com.vizo.news.ui.VizoTextView
+                        style="@style/Yellow_TextView_Style"
+                        android:layout_marginLeft="4dp"
+                        android:text="@string/Settings"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_walkthrough_swipe_updown"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:background="@color/black_overlay"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icon_wt_swipe_updown" />
+
+        <com.vizo.news.ui.VizoTextView
+            style="@style/White_TextView_Style"
+            android:layout_marginTop="12dp"
+            android:text="@string/SWIPE_UP_OR_DOWN"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <com.vizo.news.ui.VizoTextView
+                style="@style/White_TextView_Style"
+                android:text="@string/to" />
+
+            <com.vizo.news.ui.VizoTextView
+                style="@style/Yellow_TextView_Style"
+                android:layout_marginLeft="4dp"
+                android:text="@string/Change_Glance_Categories"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_walkthrough_tap_bolt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:background="@color/black_overlay"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/icon_finger" />
+
+            <com.vizo.news.ui.VizoTextView
+                style="@style/White_TextView_Style"
+                android:layout_marginTop="12dp"
+                android:text="@string/TAP_THE_LIGHTNING_BOLT"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <com.vizo.news.ui.VizoTextView
+                    style="@style/White_TextView_Style"
+                    android:text="@string/to_load" />
+
+                <com.vizo.news.ui.VizoTextView
+                    style="@style/Yellow_TextView_Style"
+                    android:layout_marginLeft="4dp"
+                    android:text="@string/New_Glances"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="60">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:paddingRight="48dp"
+                android:src="@drawable/icon_light" />
+
+            <ImageView
+                android:id="@+id/iv_highlight_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="96dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/icon_highlight" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#aa000000"
+        android:id="@+id/frameProgress">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center" />
+    </FrameLayout>
+</RelativeLayout>

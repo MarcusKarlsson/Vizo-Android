@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_logo_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_logo"
+            android:contentDescription="@string/app_name" />
+
+        <com.vizo.news.ui.VizoTextView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_horizontal"
+            android:text="@string/your_world_at_a_glance"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <com.vizo.news.ui.VizoTextView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/Next"
+            android:textColor="@color/vizo_yellow"
+            android:textSize="22dp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+</RelativeLayout>

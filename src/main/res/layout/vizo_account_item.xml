@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_account_image"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icon_add_account" />
+
+        <com.vizo.news.ui.VizoTextView
+            android:id="@+id/tv_account_name"
+            style="@style/White_TextView_Style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/iv_account_image"
+            android:text="@string/app_name"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/iv_status_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_top_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|end">
+
+        <com.vizo.news.ui.VizoTextView
+            android:id="@+id/tv_disconnect_button"
+            style="@style/White_TextView_Style"
+            android:background="@drawable/button_pink_bg"
+            android:padding="8dp"
+            android:textSize="12dp" />
+    </LinearLayout>
+</RelativeLayout>

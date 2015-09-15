@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
+    <dimen name="preview_horizontal_margin">10dp</dimen>
+    <dimen name="preview_vertical_margin">10dp</dimen>
+
+    <!-- Vizo Progress Dialog Dimensions -->
+    <dimen name="progress_dialog_width">240dp</dimen>
+    <dimen name="progress_dialog_height">240dp</dimen>
+
+    <!-- Preference Panel Dimensions-->
+    <dimen name="preference_panel_height">300dp</dimen>
+    <dimen name="panel_item_height">80dp</dimen>
+
+    <!-- VizoScrollView Dimensions -->
+    <dimen name="vizo_scrollview_page_size">320dp</dimen>
+
+    <!-- State Of The Day Image Size -->
+    <dimen name="glance_image_width">180dp</dimen>
+    <dimen name="glance_image_height">180dp</dimen>
+
+    <!-- Vizo Round Layout Corner Radius -->
+    <dimen name="round_layout_corner_radius">10dp</dimen>
+
+</resources>

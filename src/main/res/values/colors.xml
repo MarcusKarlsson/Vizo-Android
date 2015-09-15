@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- System Colors -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#808080</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#0000FF</color>
+    <color name="green">#00FF00</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="transparent">#00000000</color>
+    <color name="light_gray">#FFCCCCCC</color>
+    <color name="darker_gray">#80AAAAAA</color>
+
+    <!-- Vizo Colors -->
+    <color name="black_overlay">#D0000000</color>
+    <color name="vizo_yellow">#F8C53A</color>
+
+    <!-- User Category Colors -->
+    <color name="category_business">#1abc9c</color>
+    <color name="category_politics">#2ecc71</color>
+    <color name="category_sports">#e67e22</color>
+    <color name="category_arts_culture">#ecf0f1</color>
+    <color name="category_technology">#3498db</color>
+    <color name="category_us">#e74c3c</color>
+    <color name="category_world">#34495e</color>
+    <color name="category_celebrity">#f1c40f</color>
+    <color name="category_vizou">#f131ff</color>
+    <color name="category_science">#16a085</color>
+
+</resources>

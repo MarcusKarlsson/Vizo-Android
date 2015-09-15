@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vizo.news.ui.VizoRoundedLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:VizoRoundedLayout="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_grey"
+    android:orientation="vertical">
+
+    <com.vizo.news.ui.VizoDynamicImageView
+        android:id="@+id/iv_glance_image"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:id="@+id/view_category_filter"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+        android:alpha="0.4" />
+
+    <com.vizo.news.ui.VizoTextView
+        android:id="@+id/tv_update_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="8dp"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+    <com.vizo.news.ui.VizoRoundedLayout
+        android:id="@+id/rl_avatar_container"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="116dp"
+        VizoRoundedLayout:corner_radius="24dp">
+
+        <com.vizo.news.ui.VizoDynamicImageView
+            android:id="@+id/iv_poster_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop" />
+    </com.vizo.news.ui.VizoRoundedLayout>
+
+    <com.vizo.news.ui.VizoTextView
+        android:id="@+id/tv_poster_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_glance_image"
+        android:layout_margin="4dp"
+        android:layout_toRightOf="@id/rl_avatar_container"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+    <com.vizo.news.ui.VizoTextView
+        android:id="@+id/tv_glance_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_avatar_container"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_glance_description"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:padding="10dp"
+            android:src="@drawable/icon_delete" />
+
+        <LinearLayout
+            android:id="@+id/ll_vote_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_unlike_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:contentDescription="@string/app_name"
+                android:padding="10dp"
+                android:src="@drawable/icon_vote_down" />
+
+            <ImageView
+                android:id="@+id/iv_like_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:contentDescription="@string/app_name"
+                android:padding="10dp"
+                android:src="@drawable/icon_vote_up" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_bottom_container"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icon_white_star" />
+
+        <com.vizo.news.ui.VizoTextView
+            android:id="@+id/tv_favorite_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+    </LinearLayout>
+</com.vizo.news.ui.VizoRoundedLayout>

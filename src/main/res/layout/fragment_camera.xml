@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/surCaptureView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/iv_glance_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_camera_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:id="@+id/iv_back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@string/app_name"
+                android:padding="12dp"
+                android:src="@drawable/icon_cross" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp">
+
+            <com.vizo.news.ui.VizoTextView
+                android:id="@+id/tv_capture_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/icon_capture_button"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/Capture"
+                android:textColor="@color/vizo_yellow"
+                android:textSize="12dp" />
+
+            <com.vizo.news.ui.VizoTextView
+                android:id="@+id/tv_use_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/icon_capture_button"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/Use"
+                android:textColor="@color/vizo_yellow"
+                android:textSize="12dp"
+                android:visibility="gone" />
+
+            <com.vizo.news.ui.VizoTextView
+                android:id="@+id/tv_upload_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tv_capture_button"
+                android:padding="12dp"
+                android:text="@string/Upload"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <com.vizo.news.ui.VizoTextView
+                android:id="@+id/tv_reshoot_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tv_use_button"
+                android:padding="12dp"
+                android:text="@string/Reshoot"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_category_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_tint"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/view_category_filter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.4" />
+
+        <RelativeLayout
+            android:id="@+id/rl_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:id="@+id/iv_back_in_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@string/app_name"
+                android:padding="12dp"
+                android:src="@drawable/icon_back" />
+
+            <com.vizo.news.ui.VizoTextView
+                android:id="@+id/tv_next_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:enabled="false"
+                android:padding="12dp"
+                android:text="@string/next"
+                android:textColor="@color/grey" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_top_bar"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <com.vizo.news.ui.VizoTextView
+                style="@style/White_TextView_Style"
+                android:layout_width="match_parent"
+                android:gravity="left"
+                android:text="@string/Choose_a_Category"
+                android:textColor="@color/grey"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="#80FFFFFF" />
+
+            <ListView
+                android:id="@+id/lv_category_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#80FFFFFF"
+                android:dividerHeight="1dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

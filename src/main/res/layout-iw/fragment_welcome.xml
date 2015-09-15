@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.vizo.news.ui.VizoTextView
+            android:id="@+id/tv_skip_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:padding="12dp"
+            android:text="@string/skip_text"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_skip_button"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/icon_logo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <com.vizo.news.ui.VizoTextView
+                    style="@style/Yellow_TextView_Style"
+                    android:text="@string/vizo"
+                    android:textStyle="bold" />
+
+                <com.vizo.news.ui.VizoTextView
+                    style="@style/White_TextView_Style"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/welcome_text" />
+            </LinearLayout>
+
+            <com.vizo.news.ui.VizoTextView
+                android:id="@+id/introText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:gravity="center_horizontal"
+                android:text="@string/intro_text"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="48dp"
+        android:paddingRight="48dp">
+
+        <com.vizo.news.ui.VizoButton
+            android:id="@+id/btn_facebook_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/button_facebook"
+            android:capitalize="words"
+            android:elegantTextHeight="true"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp"
+            android:text="@string/fb_login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <com.vizo.news.ui.VizoButton
+            android:id="@+id/btn_twitter_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_twitter"
+            android:capitalize="words"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp"
+            android:text="@string/tw_login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <com.vizo.news.ui.VizoButton
+            android:id="@+id/btn_login_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_email"
+            android:capitalize="words"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp"
+            android:text="@string/email_login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

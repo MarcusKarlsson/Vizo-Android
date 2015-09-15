@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.vizo.news.ui.VizoTextView
+        android:id="@+id/tv_clear_history"
+        style="@style/White_TextView_Style"
+        android:padding="12dp"
+        android:text="@string/Clear_All_History"
+        android:textColor="@color/vizo_yellow"
+        android:textSize="16dp" />
+
+    <com.vizo.news.ui.VizoTextView
+        android:id="@+id/tv_no_glanced"
+        style="@style/White_TextView_Style"
+        android:text="@string/no_glanced"
+        android:textColor="@color/vizo_yellow"
+        android:textSize="14dp" />
+</LinearLayout>

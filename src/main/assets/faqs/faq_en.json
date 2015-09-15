@@ -1,0 +1,119 @@
+[
+  {
+    "title": "What is Vizo?",
+    "questions": [
+      {
+        "question": "What is a Glance?",
+        "answer": "At Vizo we call all of our stories “Glances.” A Glance is a new perspective on a trending news story that consists of a 500-character synopsis & a black-and-white image with a colored focal point."
+      },
+      {
+        "question": "I just opened Vizo and see the same Glances from the morning, what gives?",
+        "answer": "Vizo updates three times a day during the week and twice a day on the weekend. We update at 7:30am, 12:30pm, and 7pm Monday-Friday & 10am and 5pm on the weekend. With the weekend emphasis, we put an emphasis on Sports, Arts & Culture, and World news Glances. If you have read all the Glances from a given update, you can scroll back and see news from earlier in the week or you can read more in-depth on a Glance in sources."
+      },
+      {
+        "question": "How do you choose what Glances to publish?",
+        "answer": "We have an algorithm that analyzes over 100 news sites to see what topics are trending, after which we make editorial decisions whether to publish stories, based on their popularity and impact. The goal is that all of the Glances we post are relevant and impactful."
+      },
+      {
+        "question": "Why does my home page look different than my friend’s?",
+        "answer": "Vizo curates the news to you on an individual level. Through our unique learning algorithm, we show you the news that we believe you want to see first. The algorithm is constantly learning from what you do and don’t read. As your tastes and preferences change, so does what you see first on the home page."
+      },
+      {
+        "question": "I have an idea that will revolutionize Vizo, how do I tell you guys?",
+        "answer": "We love to hear all feedback - the good, the bad and the ugly. Shoot us an email at help@vizonews.com and we promise to get back to you!"
+      },
+      {
+        "question": "I forgot everything, how do I see the tips again?",
+        "answer": "To view the walkthrough hold the V, go to settings and tap Tooltips. This will show you every walkthrough as though it was your first time using the app."
+      }
+    ]
+  },
+  {
+    "title": "Glances",
+    "questions": [
+      {
+        "question": "How do I read more about a Glance?",
+        "answer": "We publish between 6-10 sources along with every Glance. We want to make it as easy as possible for you to read more in-depth if that is what you desire. On every Glance, you will see an icon with quotation marks; just tap that and select the source(s) that you want to read."
+      },
+      {
+        "question": "Is there anyway to preview a Glance?",
+        "answer": "Hold down on an image on the homepage to see a short preview of the full Glance. Keep holding to read the full Glance or let go to return to the homepage."
+      },
+      {
+        "question": "Where do I go to see Glances I have already read and/or favorited?",
+        "answer": "The Vizo homepage is always changing, but we store all of the Glances you have read in Glanced. To reach Glanced, hold down the V and you will see Glanced right below Settings. In Glanced, you can also choose to see only the Glances that you have favorited by tapping the star."
+      },
+      {
+        "question": "How can I change the order of the categories on the homepage?",
+        "answer": "To change the order in which you see the categories, simply hold down the V, go to Settings → Glance Preferences and then drag and drop away!"
+      },
+      {
+        "question": "Why is there a lightning bolt on my screen?",
+        "answer": "When we post new Glances, we let you know with a push notification. If you’re on the app when the new update comes out, you will see a lightning bolt appear. Just tap the lightning bolt and the app will refresh, showing you the newest Glances."
+      },
+      {
+        "question": "How do I view an image by itself?",
+        "answer": "Just tap anywhere on a Glance to view the full image. You can pinch to zoom in from there."
+      },
+      {
+        "question": "Does Vizo provide local news?",
+        "answer": "Because we are still a small team, we are focusing our coverage on headline news for now. Currently Vizo Local only exists on our business plan, but fear not! Vizo Local is a feature that we hope to roll out within the next 6-8 months."
+      }
+    ]
+  },
+  {
+    "title": "Accounts",
+    "questions": [
+      {
+        "question": "How do I create an account?",
+        "answer": "You do not have to create an account when you sign in, but it is something we encourage doing. Having an account allows you to maintain the same Vizo experience across devices and also makes sharing much easier. To make one, just hold the V and tap at the top, where it says “No Account.”"
+      },
+      {
+        "question": "How do I add accounts for sharing?",
+        "answer": "Vizo currently supports sharing on Facebook, Twitter, Instagram, and LinkedIn (as well as via email and text). To sync additional accounts, hold down the V and tap where it says your name. Adding accounts is as easy as deleting them if you no longer want them linked."
+      },
+      {
+        "question": "What will Vizo do with my social media account info?",
+        "answer": "We use your social media account information to make signing up for Vizo easy, sharing simple, and to let you see what your friends are reading. We take your privacy seriously and would never do anything to violate your trust. Check out our privacy policy in the app under About Vizo and at www.vizonews.com/privacy"
+      }
+    ]
+  },
+  {
+    "title": "VizoU",
+    "questions": [
+      {
+        "question": "What is VizoU?",
+        "answer": "VizoU is our revolutionary platform that allows anybody to become a journalist. Take your picture, upload it, select a category, enter your own story between 400-600 characters and then you can share it with the world."
+      },
+      {
+        "question": "How do I contribute?",
+        "answer": "To join the discussion, please login using your Facebook connected Vizo account, if you have not already. Then hold the V and tap VizoU. To write a story of your own, simply tap the + and upload a photo and write your glance."
+      },
+      {
+        "question": "How do I delete a VizoU Glance?",
+        "answer": "When you are on VizoU’s main activity page, for the Glances that you have written instead of seeing the + and - signs, you will see a delete button."
+      },
+      {
+        "question": "I just published a glance, but it isn’t there anymore. What happened?",
+        "answer": "In order to ensure that all content is appropriate and is not offensive, we use community moderation. Any glance that receives too many dislikes will get deleted. If your glance was erroneously deleted, tell us -- help@vizonews.com"
+      }
+    ]
+  },
+  {
+    "title": "State of the Day",
+    "questions": [
+      {
+        "question": "What is State of the Day?",
+        "answer": "Vizo State of the Day is your one-stop-shop for getting caught up quickly on news that matters. From each update, our editors add  select Glances that we deem to be especially important to the State of the Day."
+      },
+      {
+        "question": "How do I access State of the Day?",
+        "answer": "With just single tap of the V, you are able to begin reading your digest of trending stories."
+      },
+      {
+        "question": "How do you choose which Glances are featured on State of the Day?",
+        "answer": "The glances for State of the Day are picked by our editorial team on a per-update basis. Only the most significant few Glances are chosen."
+      }
+    ]
+  }
+]

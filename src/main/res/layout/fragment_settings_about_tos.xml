@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:padding="12dp"
+            android:src="@drawable/icon_back" />
+
+        <com.vizo.news.ui.VizoTextView
+            style="@style/White_TextView_Style"
+            android:layout_centerInParent="true"
+            android:text="@string/Terms_of_Service"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/divider" />
+
+            <com.vizo.news.ui.VizoTextView
+                android:id="@+id/tv_agree_button"
+                style="@style/White_TextView_Style"
+                android:padding="10dp"
+                android:text="@string/Agree"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/divider" />
+
+            <com.vizo.news.ui.VizoTextView
+                android:id="@+id/tv_decline_button"
+                style="@style/White_TextView_Style"
+                android:padding="10dp"
+                android:text="@string/Decline"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/divider" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_bottom_container"
+            android:padding="16dp">
+
+            <com.vizo.news.ui.VizoTextView
+                style="@style/White_TextView_Style"
+                android:autoText="false"
+                android:editable="false"
+                android:elegantTextHeight="false"
+                android:lineSpacingExtra="3dp"
+                android:singleLine="false"
+                android:text="@string/tos_text"
+                android:textSize="18dp" />
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="2"
+    android:versionName="1.1.1"
+    package="com.vizo.news">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Write External Storage Permission to write file to external storage -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Creates a custom permission so only this app can receive its messages. -->
+    <permission
+        android:name="com.vizo.news.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.vizo.news.permission.C2D_MESSAGE" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- Network State Permissions to detect Internet status -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".VizoApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Onboarding Activity -->
+        <activity
+            android:name=".activities.OnboardingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Home Screen Activity -->
+        <activity
+            android:name=".activities.HomeScreenActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- Full Glance Activity -->
+        <activity
+            android:name=".activities.GlanceFullActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- Home Logo Settings Activity -->
+        <activity
+            android:name=".activities.HomeSettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.CustomTranslucent" />
+
+        <!-- State Of The Day Activity -->
+        <activity
+            android:name=".activities.StateOfDayActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- VizoU Activity -->
+        <activity
+            android:name=".activities.VizoUActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- Facebook Authentication Activity -->
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- Provider for Facebook Sharing -->
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider1567103316908435"
+            android:exported="true" />
+
+        <!-- Custom Content Provider for Vizo Database -->
+        <provider
+            android:name=".database.DatabaseProvider"
+            android:authorities="com.vizo.news.provider"
+            android:exported="false"
+            android:multiprocess="true" />
+
+        <receiver
+            android:name=".service.GCMReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.vizo.news" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".service.GCMIntentService" />
+
+        <service android:name=".service.GCMRegisterService">
+            <intent-filter>
+                <action android:name="com.vizo.news.GCM_REGISTERED" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".service.ProfileSyncService" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="e2c8a3c502ddc772c298e335f43bbd0c199613d4" />
+    </application>
+
+</manifest>

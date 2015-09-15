@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Array of category Ids -->
+    <integer-array name="category_ids">
+        <item>5</item>
+        <item>7</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+    </integer-array>
+
+    <!-- Array of placeholder images for vizo categories -->
+    <integer-array name="category_placeholders">
+        <item>@drawable/placeholder_business</item>
+        <item>@drawable/placeholder_politics_he</item>
+        <item>@drawable/placeholder_sports</item>
+        <item>@drawable/placeholder_art_culture</item>
+        <item>@drawable/placeholder_technology</item>
+        <item>@drawable/placeholder_top_news_land</item>
+        <item>@drawable/placeholder_israel_news</item>
+        <item>@drawable/placeholder_world_news</item>
+        <item>@drawable/placeholder_celebrity</item>
+        <item>@drawable/placeholder_vizou</item>
+        <item>@drawable/placeholder_science</item>
+    </integer-array>
+
+</resources>

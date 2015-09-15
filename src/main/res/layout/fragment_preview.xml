@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.vizo.news.ui.VizoTextView
+            android:id="@+id/tv_edit_button"
+            style="@style/White_TextView_Style"
+            android:padding="12dp"
+            android:text="@string/Edit"
+            android:textSize="16dp" />
+
+        <com.vizo.news.ui.VizoTextView
+            style="@style/White_TextView_Style"
+            android:layout_centerInParent="true"
+            android:text="@string/Preview"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <com.vizo.news.ui.VizoTextView
+            android:id="@+id/tv_publish_button"
+            style="@style/White_TextView_Style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="12dp"
+            android:text="@string/Publish"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <com.vizo.news.ui.VizoRoundedLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_image_container"
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <ImageView
+                android:id="@+id/iv_glance_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop" />
+
+            <View
+                android:id="@+id/view_category_filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.4" />
+        </RelativeLayout>
+
+        <com.vizo.news.ui.VizoTextView
+            android:id="@+id/tv_update_time"
+            style="@style/White_TextView_Style"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="10dp"
+            android:textSize="14dp" />
+
+        <com.vizo.news.ui.VizoTextView
+            android:id="@+id/tv_glance_description"
+            style="@style/White_TextView_Style"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/rl_image_container"
+            android:padding="16dp"
+            android:textSize="16dp" />
+        <FrameLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_glance_description"
+            android:id="@+id/framePublicly">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Publish publicly"
+                android:id="@+id/chkPublicly"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:button="@drawable/abc_btn_check_material"
+                android:buttonTint="@color/white" />
+        </FrameLayout>
+    </com.vizo.news.ui.VizoRoundedLayout>
+
+
+</LinearLayout>

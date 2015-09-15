@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="64dp">
+
+    <!-- Set custom inset on left for edition item image of 64dp size -->
+    <shape>
+
+        <solid android:color="@color/grey" />
+
+    </shape>
+
+</inset>

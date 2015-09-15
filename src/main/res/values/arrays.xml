@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Array resource for supporting languages
+    refer to http://www.androidhive.info/2014/07/android-building-multi-language-supported-app/
+    for more details about language codes to use -->
+    <string-array name="language_codes" translatable="false">
+        <item>en</item>
+        <item>he</item>
+        <!--<item>zh</item>-->
+    </string-array>
+
+    <!-- Country ISO codes array resources corresponding to languages -->
+    <string-array name="country_codes" translatable="false">
+        <item>US</item>
+        <item>IL</item>
+        <!--<item>CN</item>-->
+    </string-array>
+
+    <!-- Array of category Ids -->
+    <integer-array name="category_ids">
+        <item>5</item>
+        <item>7</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+    </integer-array>
+
+    <!-- String array of category names -->
+    <string-array name="category_names">
+        <item>@string/cat_business</item>
+        <item>@string/cat_politics</item>
+        <item>@string/cat_sports</item>
+        <item>@string/cat_art_culture</item>
+        <item>@string/cat_technology</item>
+        <item>@string/cat_top_news</item>
+        <item>@string/cat_us</item>
+        <item>@string/cat_world</item>
+        <item>@string/cat_celebrities</item>
+        <item>@string/cat_vizou</item>
+        <item>@string/cat_science</item>
+    </string-array>
+
+    <!-- Array of category Color filters -->
+    <integer-array name="category_colors">
+        <item>@color/category_business</item>
+        <item>@color/category_politics</item>
+        <item>@color/category_sports</item>
+        <item>@color/category_arts_culture</item>
+        <item>@color/category_technology</item>
+        <item>@color/category_business</item>
+        <item>@color/category_us</item>
+        <item>@color/category_world</item>
+        <item>@color/category_celebrity</item>
+        <item>@color/category_vizou</item>
+        <item>@color/category_science</item>
+    </integer-array>
+
+    <!-- Array of placeholder images for vizo categories -->
+    <integer-array name="category_placeholders">
+        <item>@drawable/placeholder_business</item>
+        <item>@drawable/placeholder_politics_us</item>
+        <item>@drawable/placeholder_sports</item>
+        <item>@drawable/placeholder_art_culture</item>
+        <item>@drawable/placeholder_technology</item>
+        <item>@drawable/placeholder_top_news_land</item>
+        <item>@drawable/placeholder_us_news</item>
+        <item>@drawable/placeholder_world_news</item>
+        <item>@drawable/placeholder_celebrity</item>
+        <item>@drawable/placeholder_vizou</item>
+        <item>@drawable/placeholder_science</item>
+    </integer-array>
+
+    <!-- Array of Ids of images of accounts -->
+    <integer-array name="account_image_ids">
+        <item>@drawable/icon_add_account</item>
+        <item>@drawable/icon_facebook</item>
+        <item>@drawable/icon_twitter</item>
+        <item>@drawable/icon_linkedin</item>
+        <item>@drawable/icon_instagram</item>
+    </integer-array>
+
+    <!-- Array of names of accounts -->
+    <string-array name="account_names" translatable="false">
+        <item>@string/Add_Account</item>
+        <item>Facebook</item>
+        <item>Twitter</item>
+        <item>LinkedIn</item>
+        <item>Instagram</item>
+    </string-array>
+
+</resources>

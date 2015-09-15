@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/tv_done_button"
+        android:layout_weight="80"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.vizo.news.ui.VizoTextView
+            android:id="@+id/tv_account_button"
+            style="@style/White_TextView_Style"
+            android:layout_centerInParent="true"
+            android:alpha="0"
+            android:drawableTop="@drawable/icon_account"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:text="@string/no_account"
+            android:textSize="16dp" />
+
+        <com.vizo.news.ui.VizoTextView
+            android:id="@+id/tv_editions_button"
+            style="@style/White_TextView_Style"
+            android:layout_centerInParent="true"
+            android:alpha="0"
+            android:drawableTop="@drawable/icon_editions"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:text="@string/Editions"
+            android:textSize="16dp" />
+
+        <com.vizo.news.ui.VizoTextView
+            android:id="@+id/tv_glanced_button"
+            style="@style/White_TextView_Style"
+            android:layout_centerInParent="true"
+            android:alpha="0"
+            android:drawableTop="@drawable/icon_eye"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:text="@string/Glanced"
+            android:textSize="16dp" />
+
+        <com.vizo.news.ui.VizoTextView
+            android:id="@+id/tv_settings_button"
+            style="@style/White_TextView_Style"
+            android:layout_centerInParent="true"
+            android:alpha="0"
+            android:drawableTop="@drawable/icon_setting"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:text="@string/Settings"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btn_vizou_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:alpha="0"
+            android:background="@drawable/icon_vizou"
+            android:padding="8dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:gravity="center_horizontal|bottom">
+
+        <com.vizo.news.ui.VizoButton
+            android:id="@+id/tv_done_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:padding="20dp"
+            android:text="@string/done"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>
